@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://bharatyojna.in/wp-content/uploads/2022/07/TSRTC-Bus-Pass-min.jpg">
+    <meta peoperty="og:title" content="this is bus pass application">
+    
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: rgb(42, 37, 37);
+            color: azure;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 style="background-color: aqua; color: black;">TELANGANA STATE ROAD TRANSPORT CORPORATION <br><br>
+
+            GENERAL BUS PASS APPLICATION</h1>
+    </center>
+
+    <br>
+    <form action="./submit.html" method="get">
+        <div style="padding: 5%">
+            <fieldset>
+                <legend style="background-color:rgb(81, 67, 203); color:black;">Applicant Details</legend>
+                <label for="username"> name*</label>
+                <input type="text" name="username" id="username" pattern="[A-Za-z]{4,20}"
+                    style="text-transform: uppercase;" title="please enter youur name">
+
+                <label for="name">Father's/Guardian's Name*</label>
+
+
+                <input type="text" name="name" id="name" pattern="[A-Za-z]{5,10}"
+                    title="please enter you Father's/Guardian's Name" required>
+                <br>
+                <label for="DOB">Date of birth*</label>
+                <input type="text" name="DOB" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
+                    title="please enter in the form of mm/dd/yyyy" required>
+                <label for="gender">Gender*</label>
+                <input type="radio" name="gender" id="Female" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="female">Male</label>
+                <br>
+
+
+                <label>Age as on:</label>
+                <input type="number" min="0" max="150" name="years" placeholder="Years" readonly>
+                <input type="number" min="0" max="11" name="months" placeholder="Months" readonly>
+                <input type="number" min="0" max="31" name="days" placeholder="Days" readonly>
+                <label for="adhar">Aadhaar no :</label>
+                <input type="text" name="adhar " id="adhar" required pattern=[0-9]{12}><br>
+                <label for="whatsapp">WhatsApp No*</label>
+                <input type="text" name="whatsapp" id="WhatsApp" pattern="[6789][0-9]{9}"
+                    placeholder="please enter the whatsapp number">
+                <label for="mail">E-mail id*</label>
+                <input type="text" name="mail" id="mail" pattern=".\{1,}"><br>
+
+                <label for="photo">Photo*</label>
+                <input type="file" name="photo" id="photo">
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend style="background-color:rgb(81, 67, 203); color:black;">Residential Adress Details</legend>
+                <label for="address">Applicant's Address*</label>
+                <textarea name="address" id="address"></textarea>
+                <label for="city" id="city">District*</label>
+                <select name="city" id="city">
+                    <option value="city">Hyderabad</option>
+                </select>
+                <br>
+                <label for="city" id="city">Mandal*</label>
+                <select name="city" id="city">
+                    <option value="city">Hyderabad</option>
+                    <option value="city">Hyderabad</option>
+                </select>
+                <label for="city" id="city">Village*</label>
+                <select name="city" id="city">
+                    <option value="city">Hyderabad</option>
+                    <option value="city">Hyderabad</option>
+                </select>
+                <label for="pincode">Pincode</label>
+                <input type="text" name="pincode" id="pincode" pattern="[0-9]{6}">
+            </fieldset>
+
+            <fieldset>
+                <legend style="background-color:rgb(81, 67, 203); color:black;">Pass Type Details</legend>
+                <label for="city1" id="city1">city*</label>
+                <select name="city1" id="city">
+                    <option value="city1">Hyderabad</option>
+                </select>
+                <br>
+                <label for="passtype" id="passtype">Pass Type*</label>
+                <select name="passtype" id="passtype">
+                    <option name="" id="">---select from---- </option>
+                    <option value="passtype">GREATER PASS</option>
+                    <option value="passtype">GENERAL ORDINARY ROUTE PASS MTLY</option>
+                    <option value="passtype">GENERAL METRO ORDINARY ROUTE PASS MTLY</option>
+                    <option value="passtype">ORDINARY PASS</option>
+                    <option value="passtype">METRO EXPRESS PASS</option>
+                    <option value="passtype">METRO DELUXE PASS</option>
+
+                </select>
+
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend style="background-color:rgb(81, 67, 203); color:black;">Mode of Payment & Pass Collection
+                </legend>
+                <label for="mode">Payment Mode*</label>
+                <select name="mode" id="mode">
+                    <option value="mode">---select from----</option>
+                    <option value="mode">payment at counter</option>
+
+                </select>
+                <br>
+                <label for="delivery_mode">Pass delivery mode*</label>
+                <select name="delivery_mode" id="delivery_mode">
+                    <option value="delivery_mode">---select from----</option>
+                    <option value="delivery_mode">At counter</option>
+                </select>
+                <br>
+                <label for="center"> Center at which ypu want to collect pass*</label>
+                <select name="center" id="center">
+                    <option name="" id="">---select from---- </option>
+
+                    <option name="" id="">RTC X ROAD </option>
+                    <option name="" id="">UPPAL </option>
+                    <option name="" id="">RTC KOTI </option>
+                    <option name="" id="">RTC LB NAGAR </option>
+                </select>
+
+
+            </fieldset>
+        </div>
+        <br>
+        <center><img src="./Screenshot 2024-12-26 194200.png" alt=""></center>
+
+        <center><input type="text" name="captha" id="" pattern="[B]+rEo64"></center>
+        <center><input type="submit" value="submit"></center>
+
+
+
+
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>
